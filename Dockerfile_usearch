@@ -1,0 +1,3 @@
+FROM chrishah/usearch-docker-onbuild
+
+MAINTAINER Christoph Hahn <chrisi.hahni@gmail.com>
