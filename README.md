@@ -1,7 +1,7 @@
 # usearch-docker-onbuild
 Docker image for using usearch
 
-The docker image contains a basic setup of Ubuntu 16.04 with onbuild instructions to setup [usearch](https://www.drive5.com/usearch/). I used it with the free 32-bit version. 
+The docker image contains a basic setup of Ubuntu 16.04 with onbuild instructions to setup [usearch](https://www.drive5.com/usearch/). I used it with the free 32-bit version. Find the image on [Dockerhub](https://hub.docker.com/repository/docker/chrishah/usearch-docker-onbuild/general).
 
 To set it up you need to:
  - Download your own version of usearch and rename the binary to `usearch`
@@ -12,7 +12,7 @@ If you have not cloned this repo you need to prepare a Dockerfile first. If you 
 Build your image locally (this will first pull the image `chrishah/usearch-docker-onbuild` from dockerhub):
 ```bash
 #prepare the Dockerfile, if you don't have it
-echo -e "FROM chrishah/usearch-docker-onbuild" > Dockerfile_usearch
+echo -e "FROM chrishah/usearch-docker-onbuild:v012020" > Dockerfile_usearch
 
 #build the image (remember that a binary called usearch needs to be in your working directory)
 docker build --file ./Dockerfile_usearch -t usearch .
